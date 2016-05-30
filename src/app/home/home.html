@@ -1,0 +1,26 @@
+<div class="row">
+    <h2>Total Amount : <span ng-bind="home.total | currency:'€'"></span></h2>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th ng-repeat="title in home.titles" ng-bind="title.label"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="move in home.moves">
+        <td ng-bind="move.date | date:'medium'"></td>
+        <td ng-bind="move.type"></td>
+        <td ng-bind="move.amount | currency:'€'"></td>
+    </tr>
+    </tbody>
+</table>
+
+<hr />
+
+<div class="row">
+    <input type="button" value="Save" class="btn btn-primary btn-block md-col-6" ng-click="home.save()"></input>
+    <input type="button" value="Retrieve" class="btn btn-primary btn-block md-col-6" ng-click="home.retrieve()"></input>
+</div>
+

@@ -1,0 +1,33 @@
+{
+  "name": "bankaccount",
+  "version": "1.0.0",
+  "description": "Bank Account Kata",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-bootstrap": "1.1.0",
+    "angular-ui-router": "0.2.18",
+    "angular-local-storage": "0.2.7",
+    "angular": "1.5.5",
+    "bootstrap": "3.3.6",
+    "underscore": "1.8.3",
+    "angular-underscore": "0.5.0"
+  },
+  "overrides": {
+    "angular": {
+      "main": "angular.js"
+    },
+    "angular-ui-router": {
+      "main": "release/angular-ui-router.js",
+      "dependencies": {
+        "angular": "1.5.5"
+      }
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}
